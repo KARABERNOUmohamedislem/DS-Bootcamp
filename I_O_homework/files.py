@@ -9,9 +9,11 @@ random_names = ["April Reiter","Emory Miller","David Ballin","Alice Trotter","Vi
 for name in random_names:
     names += "\n"+name
 
+file.close()
 file = open("./student_names.txt","w")
 
 file.write(names)
+file.close()
 
 # Read the first n lines of the file.
 # Read the last n lines of the file.
@@ -35,6 +37,7 @@ if name+" " in all_names:
 else:
     print(name, " is not in the file.")
 
+file.close()
 # Write a Python program to generate 26 text files named A.txt, B.txt, and so on up to Z.txt.
 
 for letter_index in range(0,26):
